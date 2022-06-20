@@ -172,6 +172,11 @@ section .title::after {
 
 /* ============ */
 /* about section */
+.about .left {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
 .about .title::after{
   content: "who I am";
 }
@@ -628,11 +633,8 @@ footer {
   .about .about-content .left {
    display: flex;
    justify-content: center;
+   align-items: start;
    margin-bottom: 40px;
-  }
-  .about .about-content .left img {
-    width: 400px;
-    height: 300px;
   }
   .about .about-content .column{
     width: 100%;
