@@ -181,15 +181,16 @@ section .title::after {
   content: "who I am";
 }
 .about .about-content .left{
-  width: 45%;
+  width: 35%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 5px solid var(--mainColor);
+  border-radius: 6px;
 }
 
 .about .about-content .left img {
-  border: 5px solid var(--mainColor);
-  height: 400px;
-  width: 400px;
+   width: 100%;
   object-fit: cover;
-  border-radius: 6px;
 }
 .about .about-content .right {
   width: 55%;
@@ -568,8 +569,8 @@ footer {
 
 @media (max-width: 1101px) {
   .about .about-content .left img {
-    height: 350px;
-    width: 350px;
+    /* height: 350px;
+    width: 350px; */
   }
 
 }
@@ -637,9 +638,8 @@ footer {
     flex-direction: column;
   }
   .about .about-content .left {
-   display: flex;
-   justify-content: center;
-   align-items: start;
+    aspect-ratio: 5 / 3;
+    width: 20%;
    margin-bottom: 40px;
   }
   .about .about-content .column{
@@ -696,9 +696,8 @@ footer {
     padding: 9px 20px;
     margin-top: 20px
   }
-  .about .about-content .left img {
-    width: 300px;
-    height: 230px;
+  .about .about-content .left {
+    aspect-ratio: 1;
   }
   .service .service-content .cards {
     width: 100%;
